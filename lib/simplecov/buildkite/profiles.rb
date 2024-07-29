@@ -31,7 +31,7 @@ module SimpleCov::Buildkite::Profiles
   end
 
   def self.git_fetch(branch)
-    get 'fetch', 'origin', branch
+    git 'fetch', 'origin', branch
   end
 
   SimpleCov.profiles.define 'buildkite' do
