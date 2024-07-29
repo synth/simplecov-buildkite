@@ -48,7 +48,7 @@ module SimpleCov::Buildkite::Profiles
     end
 
     STDERR.puts "base_branch_name=#{base_branch_name}"
-    git_fetch_base("#{base_branch_name}:#{base_branch_name}")
+    git_fetch("#{base_branch_name}:#{base_branch_name}")
 
     current_commit = ENV['BUILDKITE_COMMIT']
 
